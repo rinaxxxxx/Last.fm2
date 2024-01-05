@@ -1,0 +1,12 @@
+{
+   "name": "Last.FM",
+   "version": "0.1",
+   "description": "Last.fm RPC",
+   "authors": [
+      {
+         "name": "Kief",
+         "id": "757661857891876904"
+      }
+   ],
+   "color": "#f69220"
+}
