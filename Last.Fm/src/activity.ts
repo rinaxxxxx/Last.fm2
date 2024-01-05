@@ -84,8 +84,8 @@ export function getActivity(): Activity | undefined {
             activity.assets = {
               large_image: track.image[3]["#text"],
               large_text: `Album: ${album}`,
-              small_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youtube_Music_icon.svg/512px-Youtube_Music_icon.svg.png",
-              small_text: `Song: ${name}`,
+              // small_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youtube_Music_icon.svg/512px-Youtube_Music_icon.svg.png",
+              // small_text: `Song: ${name}`,
             };
           }
 
