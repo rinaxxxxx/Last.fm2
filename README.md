@@ -1,3 +1,3 @@
-# Last.FM RPC
+# Enmity Plugins
 
-An Emnity Plugin that displays your currently playing song from Last.FM.
+A collection of plugins for Enmity.
