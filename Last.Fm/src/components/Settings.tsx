@@ -22,7 +22,6 @@ export default ({ settings }: SettingsProps) => {
   React.useEffect(
     () => () => {
       if (hasKey()) {
-        console.log("Setting activity on settings close");
         getActivity();
       } else {
         getActivity();
