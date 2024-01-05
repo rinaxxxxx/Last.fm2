@@ -3,11 +3,11 @@ import commonjs from '@rollup/plugin-commonjs';
 import esbuild from 'rollup-plugin-esbuild';
 import json from '@rollup/plugin-json';
 import copy from 'rollup-plugin-copy';
-import Manifest from './src/manifest.json';
+import Manifest from './Last.Fm/src/manifest.json';
 import { defineConfig } from 'rollup';
 
 export default defineConfig({
-   input: 'src/index.tsx',
+   input: 'Last.Fm/src/index.tsx',
    output: [
       {
          file: `dist/${Manifest.name}.js`,
@@ -19,7 +19,7 @@ export default defineConfig({
       nodeResolve(),
       commonjs(),
       json(),
-      copy({ targets: [{ src: 'src/manifest.json', dest: 'dist/' }] }),
+      copy({ targets: [{ src: './Last.Fm/src/manifest.json', dest: 'dist/' }] }),
       esbuild({ minify: true, target: 'ES2019' }),
    ]
 });
