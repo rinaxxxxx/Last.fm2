@@ -1,9 +1,6 @@
 import {
-  Button,
   FormInput,
-  FormRow,
   FormSection,
-  FormSwitch,
   KeyboardAvoidingView,
   ScrollView,
   Text,
@@ -54,15 +51,26 @@ export default ({ settings }: SettingsProps) => {
           />
         </FormSection>
         <View style={{ marginBottom: 50 }} />
-        <Text style={{ textAlign: "center", color: "#fff", fontSize: 12 }}>
-          Created by
-          <Text
-            style={{ color: "#7289da" }}
-            onPress={() => Linking.openURL("https://printedwaste.com")}
-          >
-            Kief
+        <View style={{flexDirection: "column"}}>
+          <Text style={{ textAlign: "center", color: "#fff", fontSize: 12 }}>
+            Created by
+            <Text
+              style={{ color: "#7289da" }}
+              onPress={() => Linking.openURL("https://printedwaste.com")}
+            >
+              Kief
+            </Text>
           </Text>
-        </Text>
+          <Text style={{ textAlign: "center", color: "#fff", fontSize: 12, marginTop: 10 }}>
+            Get a Last.fm API key
+            <Text
+              style={{ color: "#7289da" }}
+              onPress={() => Linking.openURL("https://www.last.fm/api/account/create")}
+            >
+              here
+            </Text>
+          </Text>
+        </View>
         <View style={{ marginBottom: 50 }} />
       </ScrollView>
     </KeyboardAvoidingView>

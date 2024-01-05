@@ -27,23 +27,6 @@ export async function fetchAssets(key: string) {
 }
 
 export function setActivity(activity) {
-  if (!activity)
-    return SET_ACTIVITY.handler({
-      isSocketConnected: () => true,
-      socket: {
-        id: 100,
-        application: {
-          id: "1052565934088405062",
-          name: null,
-        },
-        transport: "ipc",
-      },
-      args: {
-        pid: 10,
-        activity: null,
-      },
-    });
-
   return SET_ACTIVITY.handler({
     isSocketConnected: () => true,
     socket: {
@@ -101,7 +84,7 @@ export function getActivity(): Activity | undefined {
             activity.assets = {
               large_image: track.image[3]["#text"],
               large_text: `Album: ${album}`,
-              small_image: "1052566615914459176",
+              small_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youtube_Music_icon.svg/512px-Youtube_Music_icon.svg.png",
               small_text: `Song: ${name}`,
             };
           }
