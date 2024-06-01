@@ -58,7 +58,7 @@ export default ({ settings }: SettingsProps) => {
               style={{ color: "#7289da" }}
               onPress={() => Linking.openURL("https://printedwaste.com")}
             >
-              Kief
+              {" "}Kief
             </Text>
           </Text>
           <Text style={{ textAlign: "center", color: "#fff", fontSize: 12, marginTop: 10 }}>
@@ -67,7 +67,7 @@ export default ({ settings }: SettingsProps) => {
               style={{ color: "#7289da" }}
               onPress={() => Linking.openURL("https://www.last.fm/api/account/create")}
             >
-              here
+              {" "}here
             </Text>
           </Text>
         </View>
